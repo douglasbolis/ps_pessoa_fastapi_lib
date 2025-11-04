@@ -1,8 +1,8 @@
 from fastapi import HTTPException
 from sqlmodel import Session
 from controller.generic import create_crud_router, Hooks
-from model.models import Endereco, Pessoa
-from model.dto import EnderecoCreate, EnderecoUpdate, EnderecoRead
+from ps_pessoas_fastapi_lib.model.models import Endereco, Pessoa
+from ps_pessoas_fastapi_lib.model.dto import EnderecoCreate, EnderecoUpdate, EnderecoRead
 
 class EnderecoHooks(Hooks[Endereco, EnderecoCreate, EnderecoUpdate]):
     def pre_create(self, payload: EnderecoCreate, session: Session) -> None:

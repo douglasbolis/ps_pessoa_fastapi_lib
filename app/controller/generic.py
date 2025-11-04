@@ -1,9 +1,9 @@
 from typing import Any, Callable, Generic, Optional, Type, TypeVar
 from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlmodel import SQLModel, Session
-from util.database import get_session
-from repository.base import Repository
-from service.base import Service
+from ps_pessoas_fastapi_lib.util.database import get_session
+from ps_pessoas_fastapi_lib.repository.base import Repository
+from ps_pessoas_fastapi_lib.service.base import Service
 
 ModelT = TypeVar("ModelT", bound=SQLModel)
 CreateT = TypeVar("CreateT", bound=SQLModel)

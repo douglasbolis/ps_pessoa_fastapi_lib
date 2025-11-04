@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from util.database import init_db
+from ps_pessoas_fastapi_lib.util.database import init_db
 from controller.endereco import router as enderecos_router
 from controller.pessoa import router as pessoas_router
 
