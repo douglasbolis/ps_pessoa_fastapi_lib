@@ -2,7 +2,6 @@ from typing import Optional, List
 from datetime import datetime
 from sqlmodel import SQLModel, Field, Relationship
 
-
 # ====================================================================
 #                            ENDERECO
 # ====================================================================

@@ -1,7 +1,7 @@
 from typing import Optional, List
 from datetime import datetime
 from sqlmodel import Field
-from model.models import PessoaBase, EnderecoBase
+from ps_pessoas_fastapi_lib.model.models import PessoaBase, EnderecoBase
 
 # ====================================================================
 #                           ENDERECO
