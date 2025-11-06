@@ -5,6 +5,7 @@ VERSION=0.1.0
 
 # Instalar dependências gerais (FastAPI, Uvicorn, etc.)
 install:
+	python -m pip install --upgrade pip
 	python -m pip install sqlmodel "fastapi[standard]"
 
 # Instalar dependências de desenvolvimento (build, wheel, twine, pytest, etc.)
@@ -22,6 +23,11 @@ test-app:
 # Rodar testes da biblioteca ps_pessoas_fastapi_lib
 test-lib:
 	pytest $(PACKAGE_NAME)/test/
+
+# Rodar testes de app e lib
+test:
+	make test-app
+	make test-lib
 
 # Buildar a lib para publicação (modo tradicional)
 build-lib:
