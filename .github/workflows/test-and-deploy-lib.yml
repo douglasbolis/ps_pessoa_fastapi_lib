@@ -1,4 +1,4 @@
-name: Test and Deploy Lib and FastAPI Service
+name: Test, Deploy Lib and FastAPI Service
 
 on:
   push:

@@ -1,11 +1,17 @@
 # ps_pessoa_fastapi_lib
 
+[![Test, Deploy Lib and FastAPI Service](https://github.com/douglasbolis/ps_pessoa_fastapi_lib/actions/workflows/test-and-deploy-lib.yml/badge.svg)](https://github.com/douglasbolis/ps_pessoa_fastapi_lib/actions/workflows/test-and-deploy-lib.yml)
+
 Lib de Cadastro de Pessoas e Endereços desenvolvida com SQLModel.
 Aplicação de Cadastro de Pessoas e Endereços desenvolvida com FastAPI e a lib implementada.
 
 ## Visão Geral
 
+Aplicação com MVC e FastAPI + SQLModel.
 Este projeto simula o funcionamento de um banco de pessoas, permitindo o cadastro e gerenciamento de pessoas e endereços. Utiliza FastAPI para a API REST e SQLModel para o mapeamento dos modelos e persistência em banco de dados.
+
+A lib contém a parte do Model, com as definições do modelo de Pessoa e Endereço, além da comunicação com o banco de dados(SQLModel).
+A aplicação contém os controllers e views configurados usando o FastAPI + a lib instalada via pip.
 
 ## Funcionalidades
 
